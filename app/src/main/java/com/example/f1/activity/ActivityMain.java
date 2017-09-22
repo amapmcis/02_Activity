@@ -16,10 +16,6 @@ public class ActivityMain extends AppCompatActivity {
     private TextView numberTV;
     private Button buttonPlus;
 
-    // TODO: Define a private var for Button "-"
-    // TODO: Define a private var for TextView "Sum"
-    // TODO: Define a private var for Button "Order"
-
     private Button buttonPicture;
 
     @Override
@@ -43,10 +39,6 @@ public class ActivityMain extends AppCompatActivity {
         numberTV = (TextView) findViewById(R.id.numberTV);      // number of coffee cups
         buttonPlus = (Button) findViewById(R.id.buttonPlus);    // plus button
 
-        // TODO: Find the reference to the Button "-"
-        // TODO: Find the reference to the TextView "Sum"
-        // TODO: Find the reference to the Button "Order"
-
         buttonPicture = (Button) findViewById(R.id.buttonCoffee);
 
         // Set initial number of cups in the respective TextView to 0:
@@ -62,12 +54,6 @@ public class ActivityMain extends AppCompatActivity {
                 numberTV.setText(String.valueOf(numberOfCups));
             }
         });
-
-        // TODO: Add listener to the button "-"
-
-        // TODO: Add listener to the button "Order"
-        // When the button is pressed the sum ("price per cup" times "number of cups")
-        // should appear in the respective TextView
 
         buttonPicture.setOnClickListener(new View.OnClickListener() {
             @Override
